@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<img src="bghead.jpg"  />
+<style type="text/css">
+body {
+  min-width:300px;
+min-height:300px;
+  overflow-x:visible;
+}
+#customers
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:100%;
+border-collapse:collapse;
+}
+#customers td, #customers th 
+{
+font-size:1em;
+border:1px solid #98bf21;
+padding:3px 7px 2px 7px;
+}
+#customers th 
+{
+font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A7C942;
+color:#ffffff;
+}
+#customers tr.alt td 
+{
+color:#000000;
+background-color:#EAF2D3;
+}
+</style>
+</head>
+
+<body>
+<script type="text/javascript">
+	function SetHTML1(type) {
+		document.getElementById("a1").style.display = "none"
+		document.getElementById("b1").style.display = "none"
+		document.getElementById("c1").style.display = "none"
+		
+		document.getElementById("e1").style.display = "none"
+		document.getElementById("f1").style.display = "none"
+		document.getElementById("g1").style.display = "none"
+				
+		// Using style.display="block" instead of style.display="" leaves a carriage return
+		document.getElementById(type).style.display = ""
+	}
+</script>
+
+<table id="customers">
+<tr>
+  <th>What do you need?</th>
+</tr>
+<tr class="alt">
+<td><input name="br" type="radio" checked onClick="SetHTML1('a1')">
+Security Software</td>
+</tr>
+<tr>
+<td><input name="br" type="radio" checked onClick="SetHTML1('b1')">
+Browser</td>
+</tr>
+<tr class="alt">
+<td>
+<input name="br" type="radio" checked onClick="SetHTML1('c1')">Internet tools</td>
+<tr >
+<td>
+<input name="br" type="radio" checked onClick="SetHTML1('e1')">Media</td>
+</tr>
+<tr class="alt"><td>
+<input name="br" type="radio" checked onClick="SetHTML1('f1')">Utilities</td>
+</tr>
+<tr>
+<td>
+<input name="br" type="radio" checked onClick="SetHTML1('g1')">Office Tools</td>
+</tr>
+</table>
+
+<span id="a1" style="display:none">	<a href="security.html"><button type="button">Next</button></a>	</span>
+<span id="b1" style="display:none">	<a href="browsers.html"><button type="button">Next</button></a></span>
+<span id="c1" style="display:none">	<a href="internet.html"><button type="button">Next</button></a></span>
+<span id="e1" style="display:none">	<a href="media.html"><button type="button">Next</button></a></span>
+<span id="f1" style="display:none">	<a href="utilities.html"><button type="button">Next</button></a></span>
+<span id="g1" style="display:none">	<a href="office.html"><button type="button">Next</button></a></span>
+</body>
+</html>

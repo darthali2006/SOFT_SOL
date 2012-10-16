@@ -1,0 +1,12 @@
+{
+  "name": "SOFT SOL",
+  "version": "1.0",
+  "description": "The first extension that I made.",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "popup": "list1.html"
+  },
+  "permissions": [
+    "http://www.download.com/"
+  ]
+}
